@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Máté Nagy</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Máté Nagy</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scientific Publications</title>
+      <link>http://localhost:1313/papers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/</guid>
+      <description>&lt;h2 id=&#34;papers&#34;&gt;Papers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/papers/industrial-scale-ieee-cloud-2019.pdf&#34;&gt;Industrial-scale Stateless Network Functions&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Once you move your services from dedicated hardware (e.g. DSP, Digital Signal Processor) to commodity (e.g. VM, Virtual Machine) you will face some unexpected problems. In particular, when a DSP goes down, you lose as many sessions as a DSP can handle - which is a dozen. Along the same lines, in the new era, if a VM kicks the bucket it may bring down thousands of sessions that is pretty much unacceptable. The paper tells you how to handle this problem.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

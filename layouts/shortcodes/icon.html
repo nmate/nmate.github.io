@@ -1,0 +1,3 @@
+<a href="{{ .Get "url" }}" target="_blank" rel="noopener noreferrer" class="icon-link" style="display: inline-block; width: {{ .Get "size" | default "24" }}px; height: {{ .Get "size" | default "24" }}px;">
+    {{ partial "svg.html" (dict "name" (.Get "name")) }}
+</a>

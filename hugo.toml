@@ -1,0 +1,33 @@
+baseURL = 'https://matenagy.hu/'
+languageCode = 'en-us'
+title = 'Máté Nagy'
+theme = 'PaperMod'
+
+[params]
+  defaultTheme = "auto"    # light/dark/auto
+
+  [params.homeInfoParams]
+
+  # Optional: social/contact links shown below the content
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/nmate"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:your@email.com"
+
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 1
+
+[[menu.main]]
+  name = "Papers"
+  url = "/papers/"
+  weight = 2
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 3
