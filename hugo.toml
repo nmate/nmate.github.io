@@ -23,7 +23,7 @@ theme = 'PaperMod'
   weight = 1
 
 [[menu.main]]
-  name = "Papers"
+  name = "Academic"
   url = "/papers/"
   weight = 2
 

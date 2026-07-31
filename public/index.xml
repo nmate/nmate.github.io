@@ -8,15 +8,15 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Scientific Publications</title>
+      <title></title>
       <link>http://localhost:1313/papers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/papers/</guid>
       <description>&lt;h2 id=&#34;papers&#34;&gt;Papers&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://localhost:1313/papers/industrial-scale-ieee-cloud-2019.pdf&#34;&gt;Industrial-scale Stateless Network Functions&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Once you move your services from dedicated hardware (e.g. DSP, Digital Signal Processor) to commodity (e.g. VM, Virtual Machine) you will face some unexpected problems. In particular, when a DSP goes down, you lose as many sessions as a DSP can handle - which is a dozen. Along the same lines, in the new era, if a VM kicks the bucket it may bring down thousands of sessions that is pretty much unacceptable. The paper tells you how to handle this problem.&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://ieeexplore.ieee.org/document/11435462&#34;&gt;Elastic Scaling of Real Time Communication Services&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Real-time Communications (RTC) services, including multiparty conferencing, live streaming, and cloud-gaming, rely on a large-scale media plane infrastructure that provides real-time audio/video processing to clients. Unfortunately, off-the-shelf RTC services are not elastically scalable. As a result, operators must provision media servers to meet peak demand, resulting in resource under-utilization and high cost. Given that today microservice orchestrators like Kubernetes allow web-services to scale transparently and econimically, this paper looks at applying the same approach to scale large-scale RTC services.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
