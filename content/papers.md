@@ -3,27 +3,37 @@ title: ""
 layout: "single"
 ---
 
-## Papers
-- **[Elastic Scaling of Real Time Communication Services](https://ieeexplore.ieee.org/document/11435462)**
+## Cloud-native challenges
 
-    Real-time Communications (RTC) services, including multiparty conferencing, live streaming, and cloud-gaming, rely on a large-scale media plane infrastructure that provides real-time audio/video processing to clients. Unfortunately, off-the-shelf RTC services are not elastically scalable. As a result, operators must provision media servers to meet peak demand, resulting in resource under-utilization and high cost. Given that today microservice orchestrators like Kubernetes allow web-services to scale transparently and econimically, this paper looks at applying the same approach to scale large-scale RTC services.
+Traditional telco systems were not exactly born for today's cloud-native ecosystem (recommended reading: [pet vs. cattle](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/)).
 
-    *Published in IEEE Transactions on Network and Service Management, 2026.*
+- [**Elastic Scaling of Real Time Communication Services**](https://ieeexplore.ieee.org/document/11435462)  
+  **Máté Nagy**; Tamás Lévai; Felicián Németh; Aurojit Panda; Gianni Antichi; Gábor Rétvári
+  *Published in IEEE Transactions on Network and Service Management, 2026.*
 
-- **[Industrial-scale Stateless Network Functions](/papers/industrial-scale-ieee-cloud-2019.pdf)**
+    **TL;DR**  
+    Kubernetes networking is built on {{< abbr "NAT" >}}, which replaces the source address of packets in transit. This is particularly problematic for real-time media where users are identified by their source address (IP and port). In this paper we explore how a custom service mesh could work around this limitation. This line of work also gave rise to the popular WebRTC gateway, [STUNner](https://github.com/l7mp/stunner), largely thanks to the brilliance of [Gábor Rétvari](http://lendulet.tmit.bme.hu/~retvari/).
+    
+- [**Industrial-scale Stateless Network Functions**](/papers/industrial-scale-ieee-cloud-2019.pdf)  
+   Márk Szalay, **Máté Nagy**, Dániel Géhberger, Zoltán Kiss, Péter Mátray, Felician Németh, Gergely Pongrácz, Gábor Rétvári, László Toka  
+   *Published in: IEEE Cloud, Milan, Italy, 2019.*
 
-    Once you move your services from dedicated hardware (e.g. DSP, Digital Signal Processor) to commodity (e.g. VM, Virtual Machine) you will face some unexpected problems. In particular, when a DSP goes down, you lose as many sessions as a DSP can handle - which is a dozen. Along the same lines, in the new era, if a VM kicks the bucket it may bring down thousands of sessions that is pretty much unacceptable. The paper addresses how to avoid this.
+    **TL;DR**  
+    High performance (low latency and jitter) is the primary focus when designing telco media servers. Before the cloud era, keeping session state in-process was not a limitation but a feature, with resiliency delegated to hardware. Once these services moved to the cloud, that was no longer an option — the software itself had to handle failures gracefully. Imagine a server handling all live sessions of a small country going down; the inability to call 911 is simply unacceptable. The challenge I received from my former manager was to come up with a practical solution. Thanks to a superfast in-house database and a few enthusiastic colleagues, the solution made it into the product, and this paper and several patents followed (see [Google Scholar](https://scholar.google.com/citations?user=prFKKcUAAAAJ&hl=hu)).
+    
 
-    *Published in: IEEE Cloud, Milan, Italy, 2019.*
+## Information theory
 
-
-- [**R3D3: A Doubly Opportunistic Data Structure for Compressing and Indexing Massive Data**](/papers/r3d3_2019.pdf)
-
-    Short overview later
-
+- [**R3D3: A Doubly Opportunistic Data Structure for Compressing and Indexing Massive Data**](/papers/r3d3_2019.pdf)  
+    **Máté Nagy**, János Tapolcai, Gábor Rétvári  
     *Published in: Infocommunications Journal, 11:58--66, 2019.*
 
-- **[Node Virtualization for IP Level Resilience](/papers/nagy2018ton.pdf)**
+    **TL;DR**  
+    Succinct data structures let you store data in a compact form while keeping it directly accessible — no need to decompress before querying. [R3D3](https://github.com/nmate/sdsl-lite) is a tweak to the popular RRR representation scheme, by leveraging longer block sizes to reduce the size of the index. It didn't exactly set the world on fire, though :-).
+
+
+## Network optimization for resiliency
+- <a href="/papers/nagy2018ton.pdf" class="no-underline">**Node Virtualization for IP Level Resilience**</a>
 
     Short overview later
 
@@ -31,6 +41,7 @@ layout: "single"
 
 ## Dissertation
 
-- **[Thesis booklet](papers/thesis_booklet_mate_nagy.pdf)**
+- [**Thesis booklet**](/papers/thesis_booklet_mate_nagy.pdf)
 
-- **[Dissertation](papers/thesis_mate_nagy.pdf)**
+- [**Dissertation**](/papers/thesis_mate_nagy.pdf)
+

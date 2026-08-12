@@ -43,3 +43,10 @@
 .post-content ul > li {
     margin-bottom: 1.5rem;
 }
+
+/* Remove underline from links with class "no-underline" */
+.post-content a.no-underline {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}

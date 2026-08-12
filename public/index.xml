@@ -12,11 +12,16 @@
       <link>http://localhost:1313/papers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/papers/</guid>
-      <description>&lt;h2 id=&#34;papers&#34;&gt;Papers&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;cloud-native-challenges&#34;&gt;Cloud-native challenges&lt;/h2&gt;
+&lt;p&gt;Traditional telco systems were not exactly born for today&amp;rsquo;s cloud-native ecosystem (recommended reading: &lt;a href=&#34;http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/&#34;&gt;pet vs. cattle&lt;/a&gt;).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://ieeexplore.ieee.org/document/11435462&#34;&gt;Elastic Scaling of Real Time Communication Services&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Real-time Communications (RTC) services, including multiparty conferencing, live streaming, and cloud-gaming, rely on a large-scale media plane infrastructure that provides real-time audio/video processing to clients. Unfortunately, off-the-shelf RTC services are not elastically scalable. As a result, operators must provision media servers to meet peak demand, resulting in resource under-utilization and high cost. Given that today microservice orchestrators like Kubernetes allow web-services to scale transparently and econimically, this paper looks at applying the same approach to scale large-scale RTC services.&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://ieeexplore.ieee.org/document/11435462&#34;&gt;&lt;strong&gt;Elastic Scaling of Real Time Communication Services&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Máté Nagy&lt;/strong&gt;; Tamás Lévai; Felicián Németh; Aurojit Panda; Gianni Antichi; Gábor Rétvári
+&lt;em&gt;Published in IEEE Transactions on Network and Service Management, 2026.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;&lt;br&gt;
+Kubernetes networking is built on &lt;abbr title=&#34;Network Address Translation&#34;&gt;NAT&lt;/abbr&gt;
+, which replaces the source address of packets in transit. This is particularly problematic for real-time media where users are identified by their source address (IP and port). In this paper we explore how a custom service mesh could work around this limitation. This line of work also gave rise to the popular WebRTC gateway, &lt;a href=&#34;https://github.com/l7mp/stunner&#34;&gt;STUNner&lt;/a&gt;, largely thanks to the brilliance of &lt;a href=&#34;http://lendulet.tmit.bme.hu/~retvari/&#34;&gt;Gábor Rétvari&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
