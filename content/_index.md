@@ -3,7 +3,7 @@
 I've always been the curious type. And let's face it, understanding the world is no easy feat. Although I'm past the academic system, many years of work experience, and countless projects, the number of questions only keeps growing. Even if I can't answer them all, I collect what I have here in the hope that they might be useful to others as well.
 
 ### News
-* *Elastic Scaling of Real Time Communication Services* got accepted at **IEEE TNSM**
+{{< color "lightblue" >}}2026-05-31{{< /color >}} *Elastic Scaling of Real Time Communication Services* accepted at **IEEE TNSM**
 
 ### Other
 Any other material.

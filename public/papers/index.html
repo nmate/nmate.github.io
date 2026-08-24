@@ -142,9 +142,9 @@ Kubernetes networking is built on NAT
 <ul>
 <li>
 <p><a href="https://ieeexplore.ieee.org/document/11435462"><strong>Elastic Scaling of Real Time Communication Services</strong></a><br>
-<strong>Máté Nagy</strong>; Tamás Lévai; Felicián Németh; Aurojit Panda; Gianni Antichi; Gábor Rétvári
+<strong>Máté Nagy</strong>; Tamás Lévai; Felicián Németh; Aurojit Panda; Gianni Antichi; Gábor Rétvári<br>
 <em>Published in IEEE Transactions on Network and Service Management, 2026.</em></p>
-<p><strong>TL;DR</strong><br>
+<p><strong>TL;DR</strong>
 Kubernetes networking is built on <abbr title="Network Address Translation">NAT</abbr>
 , which replaces the source address of packets in transit. This is particularly problematic for real-time media where users are identified by their source address (IP and port). In this paper we explore how a custom service mesh could work around this limitation. This line of work also gave rise to the popular WebRTC gateway, <a href="https://github.com/l7mp/stunner">STUNner</a>, largely thanks to the brilliance of <a href="http://lendulet.tmit.bme.hu/~retvari/">Gábor Rétvari</a>.</p>
 </li>
@@ -152,7 +152,7 @@ Kubernetes networking is built on <abbr title="Network Address Translation">NAT<
 <p><a href="/papers/industrial-scale-ieee-cloud-2019.pdf"><strong>Industrial-scale Stateless Network Functions</strong></a><br>
 Márk Szalay, <strong>Máté Nagy</strong>, Dániel Géhberger, Zoltán Kiss, Péter Mátray, Felician Németh, Gergely Pongrácz, Gábor Rétvári, László Toka<br>
 <em>Published in: IEEE Cloud, Milan, Italy, 2019.</em></p>
-<p><strong>TL;DR</strong><br>
+<p><strong>TL;DR</strong>
 High performance (low latency and jitter) is the primary focus when designing telco media servers. Before the cloud era, keeping session state in-process was not a limitation but a feature, with resiliency delegated to hardware. Once these services moved to the cloud, that was no longer an option — the software itself had to handle failures gracefully. Imagine a server handling all live sessions of a small country going down; the inability to call 911 is simply unacceptable. The challenge I received from my former manager was to come up with a practical solution. Thanks to a superfast in-house database and a few enthusiastic colleagues, the solution made it into the product, and this paper and several patents followed (see <a href="https://scholar.google.com/citations?user=prFKKcUAAAAJ&amp;hl=hu">Google Scholar</a>).</p>
 </li>
 </ul>
@@ -162,16 +162,28 @@ High performance (low latency and jitter) is the primary focus when designing te
 <p><a href="/papers/r3d3_2019.pdf"><strong>R3D3: A Doubly Opportunistic Data Structure for Compressing and Indexing Massive Data</strong></a><br>
 <strong>Máté Nagy</strong>, János Tapolcai, Gábor Rétvári<br>
 <em>Published in: Infocommunications Journal, 11:58&ndash;66, 2019.</em></p>
-<p><strong>TL;DR</strong><br>
+<p><strong>TL;DR</strong>
 Succinct data structures let you store data in a compact form while keeping it directly accessible — no need to decompress before querying. <a href="https://github.com/nmate/sdsl-lite">R3D3</a> is a tweak to the popular RRR representation scheme, by leveraging longer block sizes to reduce the size of the index. It didn&rsquo;t exactly set the world on fire, though :-).</p>
 </li>
 </ul>
 <h2 id="network-optimization-for-resiliency">Network optimization for resiliency<a hidden class="anchor" aria-hidden="true" href="#network-optimization-for-resiliency">#</a></h2>
+<p>Providing resiliency to pure IP networks by altering the topology was a hot topic in the 2010s. If you&rsquo;re curious about the
+details, check out the intro of my dissertation. In these papers, we offered different solutions to the problem.</p>
 <ul>
 <li>
-<p><a href="/papers/nagy2018ton.pdf" class="no-underline"><strong>Node Virtualization for IP Level Resilience</strong></a></p>
-<p>Short overview later</p>
-<p><em>Published in: IEEE/ACM Transactions on Networking, 2018.</em></p>
+<p><a href="/papers/nagy2018ton.pdf"><strong>Node Virtualization for IP Level Resilience</strong></a><br>
+<strong>Máté Nagy</strong>, János Tapolcai, Gábor Rétvári<br>
+<em>Published in: IEEE/ACM Transactions on Networking, 2018.</em></p>
+</li>
+<li>
+<p><a href="/papers/drcn2014.pdf"><strong>On the design of resilient IP overlays</strong></a><br>
+<strong>Máté Nagy</strong>, János Tapolcai, Gábor Rétvári<br>
+<em>Published in: Design of Reliable Communication Networks (DRCN), 2014.</em></p>
+</li>
+<li>
+<p><a href="/papers/tel_sys_2012.pdf"><strong>Optimization methods for improving IP-level fast protection for local Shared Risk Groups with Loop-Free Alternates.</strong></a><br>
+<strong>Máté Nagy</strong>, János Tapolcai, Gábor Rétvári<br>
+<em>Published in Telecommunication Systems, 2014.</em></p>
 </li>
 </ul>
 <h2 id="dissertation">Dissertation<a hidden class="anchor" aria-hidden="true" href="#dissertation">#</a></h2>

@@ -17,9 +17,9 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://ieeexplore.ieee.org/document/11435462&#34;&gt;&lt;strong&gt;Elastic Scaling of Real Time Communication Services&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;
-&lt;strong&gt;Máté Nagy&lt;/strong&gt;; Tamás Lévai; Felicián Németh; Aurojit Panda; Gianni Antichi; Gábor Rétvári
+&lt;strong&gt;Máté Nagy&lt;/strong&gt;; Tamás Lévai; Felicián Németh; Aurojit Panda; Gianni Antichi; Gábor Rétvári&lt;br&gt;
 &lt;em&gt;Published in IEEE Transactions on Network and Service Management, 2026.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;
 Kubernetes networking is built on &lt;abbr title=&#34;Network Address Translation&#34;&gt;NAT&lt;/abbr&gt;
 , which replaces the source address of packets in transit. This is particularly problematic for real-time media where users are identified by their source address (IP and port). In this paper we explore how a custom service mesh could work around this limitation. This line of work also gave rise to the popular WebRTC gateway, &lt;a href=&#34;https://github.com/l7mp/stunner&#34;&gt;STUNner&lt;/a&gt;, largely thanks to the brilliance of &lt;a href=&#34;http://lendulet.tmit.bme.hu/~retvari/&#34;&gt;Gábor Rétvari&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
