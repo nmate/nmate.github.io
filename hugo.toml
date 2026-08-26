@@ -2,6 +2,7 @@ baseURL = 'https://matenagy.hu/'
 languageCode = 'en-us'
 title = 'Máté Nagy'
 theme = 'PaperMod'
+enableEmoji = true
 
 [markup]
   [markup.goldmark]
