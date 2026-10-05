@@ -13,12 +13,12 @@ Traditional telco systems were not exactly born for today&rsquo;s cloud-native e
 
 Elastic Scaling of Real Time Communication Services [ link ]
 IEEE Transactions on Network and Service Management, 2026.
-Máté Nagy; Tamás Lévai; Felicián Németh; Aurojit Panda; Gianni Antichi; Gábor Rétvári
+M. Nagy; T. Lévai; F. Németh; A. Panda; G. Antichi; G. Rétvári
 TL;DR: Kubernetes networking is built on NAT
 , which replaces the source address of packets in transit. This is particularly problematic for real-time media where users are identified by their source address (IP and port). In this paper we explore how a custom service mesh could work around this limitation. This line of work also gave rise to the popular WebRTC gateway, STUNner, largely thanks to the brilliance of Gábor Rétvari.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/papers/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8ff9c9538a8f72713e4ddb511c43b8db57b97b71fd56025f862afa97feb44810.css" integrity="sha256-j/nJU4qPcnE&#43;TdtRHEO421e5e3H9VgJfhir6l/60SBA=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.236440f85cfdc8a81934107a034b5e827c9e1dc5f5119a80f10e6b36bcb5184c.css" integrity="sha256-I2RA&#43;Fz9yKgZNBB6A0tegnyeHcX1EZqA8Q5rNry1GEw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -43,7 +43,7 @@ TL;DR: Kubernetes networking is built on NAT
 
 </script>
 </head>
-<body id="top">
+<body class="papers-page" id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
@@ -111,14 +111,14 @@ TL;DR: Kubernetes networking is built on NAT
 <li>
 <p><strong>Elastic Scaling of Real Time Communication Services</strong> [<a href="https://ieeexplore.ieee.org/document/11435462"> link </a>]<br>
 <em>IEEE Transactions on Network and Service Management, 2026.</em><br>
-Máté Nagy; Tamás Lévai; Felicián Németh; Aurojit Panda; Gianni Antichi; Gábor Rétvári</p>
+M. Nagy; T. Lévai; F. Németh; A. Panda; G. Antichi; G. Rétvári</p>
 <p><strong>TL;DR:</strong> Kubernetes networking is built on <abbr title="Network Address Translation">NAT</abbr>
 , which replaces the source address of packets in transit. This is particularly problematic for real-time media where users are identified by their source address (IP and port). In this paper we explore how a custom service mesh could work around this limitation. This line of work also gave rise to the popular WebRTC gateway, <a href="https://github.com/l7mp/stunner">STUNner</a>, largely thanks to the brilliance of <a href="http://lendulet.tmit.bme.hu/~retvari/">Gábor Rétvari</a>.</p>
 </li>
 <li>
 <p><strong>Industrial-scale Stateless Network Functions</strong> [<a href="/papers/industrial-scale-ieee-cloud-2019.pdf"> pdf </a>]<br>
 <em>IEEE Cloud, Milan, Italy, 2019.</em><br>
-Márk Szalay, Máté Nagy, Dániel Géhberger, Zoltán Kiss, Péter Mátray, Felician Németh, Gergely Pongrácz, Gábor Rétvári, László Toka</p>
+M. Szalay, M. Nagy, D. Géhberger, Z. Kiss, P. Mátray, F. Németh, G. Pongrácz, G. Rétvári, L. Toka</p>
 <p><strong>TL;DR:</strong> High performance (low latency and jitter) is the primary focus when designing telco media servers. Before the cloud era, keeping session state in-process was not a limitation but a feature, with resiliency delegated to hardware. Once these services moved to the cloud, that was no longer an option — the software itself had to handle failures gracefully. Imagine a server handling all live sessions of a small country going down; the inability to call 911 is simply unacceptable. The challenge I received from my former manager was to come up with a practical solution. Thanks to a superfast in-house database and a few enthusiastic colleagues, the solution made it into the product, and this paper and several <a href="https://scholar.google.com/citations?user=prFKKcUAAAAJ&amp;hl=hu">patents</a> followed.</p>
 </li>
 </ul>
@@ -127,7 +127,7 @@ Márk Szalay, Máté Nagy, Dániel Géhberger, Zoltán Kiss, Péter Mátray, Fel
 <li>
 <p><strong>R3D3: A Doubly Opportunistic Data Structure for Compressing and Indexing Massive Data</strong> [<a href="/papers/r3d3_2019.pdf"> pdf </a>]<br>
 <em>Infocommunications Journal, 11:58&ndash;66, 2019.</em><br>
-Máté Nagy, János Tapolcai, Gábor Rétvári</p>
+M. Nagy, J. Tapolcai, G. Rétvári</p>
 <p><strong>TL;DR:</strong> Succinct data structures let you store data in a compact form while keeping it directly accessible — no need to decompress before querying. <a href="https://github.com/nmate/sdsl-lite">R3D3</a> is a tweak to the popular RRR representation scheme, by leveraging longer block sizes to reduce the size of the index. It didn&rsquo;t exactly set the world on fire, though &#x1f604;</p>
 </li>
 </ul>
@@ -138,17 +138,17 @@ details, check out the intro of my dissertation. In these papers, we offered dif
 <li>
 <p><strong>Node Virtualization for IP Level Resilience</strong> [<a href="/papers/nagy2018ton.pdf"> pdf </a>]<br>
 <em>IEEE/ACM Transactions on Networking, 2018.</em><br>
-Máté Nagy, János Tapolcai, Gábor Rétvári</p>
+M. Nagy, J. Tapolcai, G. Rétvári</p>
 </li>
 <li>
 <p><strong>On the design of resilient IP overlays</strong> [<a href="/papers/drcn2014.pdf"> pdf </a>]<br>
 <em>Design of Reliable Communication Networks (DRCN), 2014.</em><br>
-Máté Nagy, János Tapolcai, Gábor Rétvári</p>
+M. Nagy, J. Tapolcai, G. Rétvári</p>
 </li>
 <li>
 <p><strong>Optimization methods for improving IP-level fast protection for local Shared Risk Groups with Loop-Free Alternates.</strong> [<a href="/papers/tel_sys_2012.pdf"> pdf </a>]<br>
 <em>Telecommunication Systems, 2014.</em><br>
-Máté Nagy, János Tapolcai, Gábor Rétvári</p>
+M. Nagy, J. Tapolcai, G. Rétvári</p>
 </li>
 </ul>
 <h3 id="dissertation">Dissertation<a hidden class="anchor" aria-hidden="true" href="#dissertation">#</a></h3>

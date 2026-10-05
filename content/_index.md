@@ -3,4 +3,3 @@
 
 ### Musings
 {{< postlist section="blog" >}}
-

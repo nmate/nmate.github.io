@@ -6,7 +6,15 @@
     <description>Recent content on Máté Nagy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why building a bus is actually a good idea?</title>
+      <link>http://localhost:1313/blog/building-bus/</link>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/building-bus/</guid>
+      <description>A story about innovation and fighting the headwind.</description>
+    </item>
     <item>
       <title></title>
       <link>http://localhost:1313/about/</link>
@@ -44,7 +52,7 @@
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Elastic Scaling of Real Time Communication Services&lt;/strong&gt; [&lt;a href=&#34;https://ieeexplore.ieee.org/document/11435462&#34;&gt; link &lt;/a&gt;]&lt;br&gt;
 &lt;em&gt;IEEE Transactions on Network and Service Management, 2026.&lt;/em&gt;&lt;br&gt;
-Máté Nagy; Tamás Lévai; Felicián Németh; Aurojit Panda; Gianni Antichi; Gábor Rétvári&lt;/p&gt;
+M. Nagy; T. Lévai; F. Németh; A. Panda; G. Antichi; G. Rétvári&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Kubernetes networking is built on &lt;abbr title=&#34;Network Address Translation&#34;&gt;NAT&lt;/abbr&gt;
 , which replaces the source address of packets in transit. This is particularly problematic for real-time media where users are identified by their source address (IP and port). In this paper we explore how a custom service mesh could work around this limitation. This line of work also gave rise to the popular WebRTC gateway, &lt;a href=&#34;https://github.com/l7mp/stunner&#34;&gt;STUNner&lt;/a&gt;, largely thanks to the brilliance of &lt;a href=&#34;http://lendulet.tmit.bme.hu/~retvari/&#34;&gt;Gábor Rétvari&lt;/a&gt;.&lt;/p&gt;</description>
     </item>

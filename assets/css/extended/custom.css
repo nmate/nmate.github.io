@@ -56,3 +56,21 @@
     --theme: #16171a;
     --entry: #232428;
 }
+
+/* Paper emoji bullets on the papers page */
+body.papers-page .post-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+body.papers-page .post-content ul > li {
+    position: relative;
+    padding-left: 2rem;
+}
+
+body.papers-page .post-content ul > li::before {
+    content: "\1F4C4"; /* page facing up */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
