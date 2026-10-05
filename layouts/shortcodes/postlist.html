@@ -1,0 +1,20 @@
+{{- /*
+  Lists posts from a section in the same style as the Research entries:
+  a light blue date followed by the italic, linked title.
+
+  Usage:
+    {{< postlist >}}                      lists all posts from "blog"
+    {{< postlist section="blog" >}}       explicit section
+    {{< postlist limit="5" >}}            only the 5 most recent
+*/ -}}
+{{- $section := .Get "section" | default "blog" -}}
+{{- $pages := where site.RegularPages "Section" $section -}}
+{{- with .Get "limit" -}}
+  {{- $pages = first (int .) $pages -}}
+{{- end -}}
+{{- range $pages }}
+<p>
+  <span style="color: lightblue">{{ .Date.Format "2006-01-02" }}</span>
+  <em><a class="no-underline" href="{{ .Permalink }}">{{ .Title }}</a></em>
+</p>
+{{- end }}

@@ -50,3 +50,9 @@
     border-bottom: none !important;
     box-shadow: none !important;
 }
+
+/* Slightly darker background in dark mode than PaperMod's default */
+:root[data-theme="dark"] {
+    --theme: #16171a;
+    --entry: #232428;
+}

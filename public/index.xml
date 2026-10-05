@@ -9,16 +9,42 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h3 id=&#34;me&#34;&gt;Me&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve always been the curious type. And let&amp;rsquo;s face it, understanding the world is no easy feat. Although I&amp;rsquo;m past the academic system, many years of work experience, and countless projects, the number of questions only keeps growing. Even if I can&amp;rsquo;t answer them all, I collect what I have here in the hope that they might be useful to others as well.&lt;/p&gt;
+&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/nmate&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;icon-link&#34; style=&#34;display: inline-block; width: 28px; height: 28px;&#34;&gt;
+    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34;
+    stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;&gt;
+    &lt;path
+        d=&#34;M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22&#34;&gt;
+    &lt;/path&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+
+&lt;a href=&#34;https://scholar.google.com/citations?user=prFKKcUAAAAJ&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;icon-link&#34; style=&#34;display: inline-block; width: 28px; height: 28px;&#34;&gt;
+    &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 25&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34;
+    stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;&gt;
+    &lt;path
+        d=&#34;M5.242 13.769L0.5 9.5 12 1l11.5 9-5.242 3.769C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z&#34; /&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/papers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/papers/</guid>
-      <description>&lt;h2 id=&#34;cloud-native-challenges&#34;&gt;Cloud-native challenges&lt;/h2&gt;
+      <description>&lt;h3 id=&#34;cloud-native-challenges&#34;&gt;Cloud-native challenges&lt;/h3&gt;
 &lt;p&gt;Traditional telco systems were not exactly born for today&amp;rsquo;s cloud-native ecosystem (recommended reading: &lt;a href=&#34;http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/&#34;&gt;pet vs. cattle&lt;/a&gt;).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Elastic Scaling of Real Time Communication Services&lt;/strong&gt; [&lt;a href=&#34;https://ieeexplore.ieee.org/document/11435462&#34;&gt; link &lt;/a&gt;]&lt;br&gt;
-&lt;em&gt;Published in IEEE Transactions on Network and Service Management, 2026.&lt;/em&gt;&lt;br&gt;
-&lt;strong&gt;Máté Nagy&lt;/strong&gt;; Tamás Lévai; Felicián Németh; Aurojit Panda; Gianni Antichi; Gábor Rétvári&lt;/p&gt;
+&lt;em&gt;IEEE Transactions on Network and Service Management, 2026.&lt;/em&gt;&lt;br&gt;
+Máté Nagy; Tamás Lévai; Felicián Németh; Aurojit Panda; Gianni Antichi; Gábor Rétvári&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Kubernetes networking is built on &lt;abbr title=&#34;Network Address Translation&#34;&gt;NAT&lt;/abbr&gt;
 , which replaces the source address of packets in transit. This is particularly problematic for real-time media where users are identified by their source address (IP and port). In this paper we explore how a custom service mesh could work around this limitation. This line of work also gave rise to the popular WebRTC gateway, &lt;a href=&#34;https://github.com/l7mp/stunner&#34;&gt;STUNner&lt;/a&gt;, largely thanks to the brilliance of &lt;a href=&#34;http://lendulet.tmit.bme.hu/~retvari/&#34;&gt;Gábor Rétvari&lt;/a&gt;.&lt;/p&gt;</description>
     </item>

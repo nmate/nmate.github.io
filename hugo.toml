@@ -10,7 +10,11 @@ enableEmoji = true
       unsafe = true
 
 [params]
-  defaultTheme = "auto"    # light/dark/auto
+  defaultTheme = "dark"    # light/dark/auto
+
+  # Prevent the home page from auto-listing posts as cards.
+  # Posts are listed manually via the `postlist` shortcode in _index.md.
+  mainSections = []
 
   [params.homeInfoParams]
 
